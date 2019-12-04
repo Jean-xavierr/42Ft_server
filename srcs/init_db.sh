@@ -1,2 +1,2 @@
 sh init.sh
-mysql -u root -p "" < create_database
+mysql -u root < create_database
