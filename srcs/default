@@ -21,6 +21,14 @@
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
+  	listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name localhost;
+
+    ssl_certificate /etc/ssl/certs/localhost.crt;
+    ssl_certificate_key /etc/ssl/private/localhost.key;
+        
+    ssl_protocols TLSv1.2 TLSv1.1 TLSv1;	
 
 	# SSL configuration
 	#
