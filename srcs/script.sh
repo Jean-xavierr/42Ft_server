@@ -1,2 +1,2 @@
 sh init.sh
-read
+tail
